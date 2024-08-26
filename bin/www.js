@@ -4,12 +4,10 @@
  * Module dependencies.
  */
 
-import { log } from "console";
 import app from "../app.js";
 import debug from "debug";
 import http from "http";
-import sanitizeHtml from "sanitize-html";
-import User from "../models/userSchema.js";
+
 /**
  * Get port from environment and store in Express.
  */
