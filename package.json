@@ -7,15 +7,20 @@
     "start": "node ./bin/www.js",
     "dev": "nodemon ./bin/www.js"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "connect-mongo": "^5.1.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "debug": "~2.6.9",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "express-validator": "^7.2.0",
     "http-errors": "^2.0.0",
+    "mongodb": "^6.8.1",
     "mongoose": "^8.5.4",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.4",

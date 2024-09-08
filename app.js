@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser";
 import scoresRouter from "./routes/scoresRouter.js";
 import connectDB from "./config/db.js";
 import MongoStore from "connect-mongo";
+import cors from "cors";
 
 const app = express();
 app.use(logger("dev"));
@@ -16,6 +17,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 connectDB();
+app.use(
+  cors({
+    origin: process.env.CLIENT,
+    methods: "GET,POST,PUT,DELETE",
+    credentials: false,
+  })
+);
 
 app.use("/api/scores", scoresRouter);
 
