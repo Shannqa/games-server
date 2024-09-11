@@ -1,0 +1,3 @@
+- add snake scores
+- add minesweeper scores
+- problem with the server port - if it's already in use, the app crashes. it should pick a different port. at the same time, on the client side, if the port is wrong, choose another one
